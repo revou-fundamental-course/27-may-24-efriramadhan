@@ -1,0 +1,10 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-icon {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
