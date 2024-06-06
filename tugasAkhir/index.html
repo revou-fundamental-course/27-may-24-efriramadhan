@@ -1,19 +1,118 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
     <!-- Navbar -->
     <nav>
-      <div class="logo-icon"></div>
-
-      <section>
-        <a class="nav-item">Home</a>
-        <a class="nav-item">Our Facilities</a>
-        <a class="nav-item">Message Us</a>
-      </section>
+        <div class="logo-icon"></div>
+        <section>
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#profile">Our Profile</a>
+            <a class="nav-item" href="#achievement">Achievement</a>
+            <a class="nav-item" href="#contact">Message Us</a>
+        </section>
     </nav>
-  </body>
+
+    <hr class="thick">
+
+    <!-- Home Section -->
+    <section id="home" class="content-container">
+        <header>
+            <h1 id="welcome-message">Hi, Welcome To Website</h1>
+        </header>
+        <article>
+            <p>Ini adalah latihan pertama</p>
+            <div class="banner-container"></div>
+        </article>
+    </section>
+
+    <hr class="thick">
+
+    <!-- Our Facilities Section -->
+    <section class="content-container">
+        <header>
+            <h1>Our Facilities</h1>
+        </header>
+        <article class="facility-list">
+            <div class="facility-item">
+                <div class="facility-icon" style="background-image: url('assets/professional-teacher.jpg');"></div>
+                <h5>Professional Teacher</h5>
+            </div>
+            <div class="facility-item">
+                <div class="facility-icon" style="background-image: url('assets/sport-field.jpg');"></div>
+                <h5>Sport Field</h5>
+            </div>
+            <div class="facility-item">
+                <div class="facility-icon" style="background-image: url('assets/classroom.png');"></div>
+                <h5>Classroom</h5>
+            </div>
+        </article>
+    </section>
+
+    <hr class="thick">
+
+    <!-- Profile Section -->
+    <section id="profile" class="content-container">
+        <header>
+            <h1>Our Profile</h1>
+        </header>
+        <div class="profile-banner" style="background-image: url('assets/profile-banner.jpg');"></div>
+        <article>
+            <h2>About Our University</h2>
+            <p>Our University  is committed to providing high-quality education...</p>
+            <h2>Vision & Mission</h2>
+            <p><strong>Vision:</strong> To be a leading educational institution...</p>
+            <p><strong>Mission:</strong> To provide excellent education...</p>
+        </article>
+    </section>
+
+    <hr class="thick">
+
+    <!-- Message Us Section -->
+    <section id="contact" class="content-container">
+        <header>
+            <h1>Message Us</h1>
+        </header>
+        <section class="message-us-section">
+            <!-- Form -->
+            <section class="form-section">
+                <form id="contactForm">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama" />
+                    <label for="tanggal-lahir">Tanggal Lahir</label>
+                    <input type="date" id="tanggal-lahir" name="tanggal-lahir" placeholder="Tanggal Lahir" />
+                    <fieldset>
+                        <legend>Jenis Kelamin</legend>
+                        <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-Laki" />
+                        <label for="laki-laki">Laki-Laki</label>
+                        <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                    </fieldset>
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" placeholder="Pesan"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <!-- Result -->
+            <section class="result-container">
+                <label for="formResult">Hasil Input</label>
+                <textarea id="formResult" class="form-result" readonly></textarea>
+            </section>
+        </section>
+    </section>
+
+    <hr class="thick">
+
+    <!-- Footer -->
+    <footer>
+        <p>Created By Efri Ramadhan</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
 </html>
